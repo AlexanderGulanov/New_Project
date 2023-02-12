@@ -5,7 +5,9 @@ html {
 
 body {
   margin: 0;
-  /*font-family: 'Muller', 'sans-serif';*/
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  background-color: #E5E5E5;
 }
 
 
@@ -17,6 +19,50 @@ a {
 
 img {
   max-width: 100%;
+}
+
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Regular'),
+    url(../fonts/MullerRegular.woff2) format('woff2'),
+    url(../fonts/MullerRegular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Light'),
+    url(../fonts/MullerLight.woff2) format('woff2'),
+    url(../fonts/MullerLight.woff) format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Bold'),
+    url(../fonts/MullerBold.woff2) format('woff2'),
+    url(../fonts/MullerBold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Medium'),
+    url(../fonts/MullerMedium.woff2) format('woff2'),
+    url(../fonts/MullerMedium.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -37,6 +83,10 @@ img {
   margin: 0;
   margin-bottom: 20px;
   padding-left: 20px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
 }
 
 .section-offset {
@@ -59,6 +109,7 @@ img {
 
 .header-left-top {
   display: flex;
+  align-items: center;
 }
 
 
@@ -66,27 +117,74 @@ img {
   margin-right: 40px;
 }
 
+
+.header-contacts {
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 20px;
+  color: #666666;
+}
+
+
 .header-cabinet {
   display: flex;
   align-items: center;
 }
+
+
+.header-cabinet-login {
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+}
+
 
 .header-bottom-block {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 14px 45px;
+  background-color: #ffffff;
+  border-radius: 15px;
 }
 
 
 .header-list {
   display: flex;
   align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
 }
 
 
 .header-button1 {
   margin-right: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 13px 20px;
+  color: #CC9933;
+  background-color: #ffffff;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+}
+
+
+.header-button2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 13px 20px;
+  color: #CC9933;
+  background-color: #ffffff;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
 }
 
 
@@ -125,27 +223,85 @@ img {
 }
 
 
+.offer-card1 {
+  background-image: url('../img/Мальдивские\ острова.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+
+
+.offer-card2 {
+  background-image: url('../img/Крит.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+
+
 .offer-h3 {
   margin: 0;
   margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  max-width: 420px;
 }
 
 .offer-price {
   margin: 0;
   margin-bottom: 47px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+
+.offer-more {
+  align-items: center;
+}
+
+
+.more {
+  margin-right: 2px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #F0BF5F;
 }
 
 
 .offer-right {
   justify-content: flex-end;
+  background-image: url('../img/Люкс.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
 }
 
 
 /*О Нас*/
+.about-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 .about-content {
   margin: 0;
-  max-width: 70%;
+  max-width: 888px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 
@@ -160,16 +316,26 @@ img {
 .services-items {
   width: 572px;
   margin-bottom: 24px;
+  background-color: #ffffff;
 }
 
 
 .services-card-img {
   object-fit: cover;
-  margin-bottom: 26px;
 }
+
+
+.text-more {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;;
+}
+
 
 .services-card-content {
   padding: 26px 126px 35px 45px;
+  background-color: #ffffff;
 }
 
 .services-card-btn {
@@ -181,6 +347,10 @@ img {
 .services-text {
   margin: 0;
   margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 /* Преимущества*/
@@ -195,12 +365,16 @@ img {
 .advantages-item {
   width: 275px;
   margin-bottom: 22px;
+  border-radius: 15px;
+  background-color: #ffffff;
 }
 
 
 .advantages-card-img {
-  max-width: 100%;
-  margin-right: auto;
+  width: 65px;
+  height: 65px;
+  margin-left: 45px;
+  margin-top: 40px;
   margin-bottom: 10px;
 }
 
@@ -208,6 +382,10 @@ img {
 .advantages-text {
   margin: 0;
   margin: 0 42px 32px 45px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 
@@ -223,6 +401,8 @@ img {
 .accomodation-items {
   width: 374px;
   margin-bottom: 24px;
+  background-color: #ffffff;
+  border-radius: 15px;
 }
 
 
@@ -241,14 +421,24 @@ img {
 
 .accomodation-card-price {
   padding: 0;
-  margin-right: 52px;
+  margin-right: 40px;
   margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
 }
 
 
 .placing-location-onspain {
   margin: 0;
   margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
 }
 
 
@@ -256,6 +446,11 @@ img {
   min-width: 400px;
   margin: 0;
   margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
 }
 
 
@@ -263,4 +458,31 @@ img {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  background-image: url('../img/9.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #666666;
+}
+
+
+.accomodation-card-last {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #ffffff;
+  margin-bottom: 27px;
+}
+
+
+.placing-btn {
+  margin-right: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 13px 20px;
+  color: #CC9933;
+  background-color: #ffffff;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
 }
