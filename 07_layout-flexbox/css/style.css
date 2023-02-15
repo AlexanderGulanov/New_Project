@@ -130,11 +130,14 @@ img {
 .header-cabinet {
   display: flex;
   align-items: center;
+  background-image: url('../img/keyboard_tab.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 
 .header-cabinet-login {
-  margin-left: 5px;
+  margin-left: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -261,13 +264,13 @@ img {
 }
 
 
-.offer-more {
-  align-items: center;
-}
-
-
 .more {
-  margin-right: 2px;
+  display: inline-block;
+  margin: 0;
+  padding-right: 20px;
+  background-image: url('../img/Arroy.png');
+  background-repeat: no-repeat;
+  background-position: right center;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -321,15 +324,24 @@ img {
 
 
 .services-card-img {
-  object-fit: cover;
+  height: 165px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 
 .text-more {
+  display: inline-block;
+  margin: 0;
+  padding-right: 20px;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
-  color: #CC9933;;
+  color: #CC9933;
+  background-image: url('../img/Arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 
@@ -363,25 +375,25 @@ img {
 
 
 .advantages-item {
-  width: 275px;
+  max-width: 200px;
   margin-bottom: 22px;
   border-radius: 15px;
   background-color: #ffffff;
+  padding: 40px 42px;
 }
 
 
 .advantages-card-img {
-  width: 65px;
-  height: 65px;
-  margin-left: 45px;
-  margin-top: 40px;
   margin-bottom: 10px;
+  width: 67px;
+  height: 66px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 .advantages-text {
   margin: 0;
-  margin: 0 42px 32px 45px;
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
@@ -407,6 +419,7 @@ img {
 
 
 .accomodation-card-image {
+  display: block;
   max-width: 100%;
   margin-bottom: 32px;
 }
@@ -466,12 +479,17 @@ img {
 
 
 .accomodation-card-last {
+  display: inline-block;
+  padding-right: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
   color: #ffffff;
   margin-bottom: 27px;
+  background-image: url('../img/Rectangle\ 2.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 
@@ -485,4 +503,5 @@ img {
   background-color: #ffffff;
   border: 1px solid #CC9933;
   border-radius: 10px;
+  cursor: pointer;
 }
