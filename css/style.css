@@ -1,0 +1,785 @@
+html {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  background-color: #E5E5E5;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Regular'),
+    url(../fonts/MullerRegular.woff2) format('woff2'),
+    url(../fonts/MullerRegular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Light'),
+    url(../fonts/MullerLight.woff2) format('woff2'),
+    url(../fonts/MullerLight.woff) format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Bold'),
+    url(../fonts/MullerBold.woff2) format('woff2'),
+    url(../fonts/MullerBold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Medium'),
+    url(../fonts/MullerMedium.woff2) format('woff2'),
+    url(../fonts/MullerMedium.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.section-offset {
+  padding-bottom: 70px;
+}
+
+/*header*/
+
+.header {
+  padding: 20px 0;
+}
+
+.header-top-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+
+.header-left-top {
+  display: flex;
+  align-items: center;
+}
+
+
+.header-logo {
+  margin-right: 40px;
+}
+
+
+.header-contacts {
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 20px;
+  color: #666666;
+}
+
+
+.header-cabinet {
+  display: flex;
+  align-items: center;
+  background-image: url('../img/keyboard_tab.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+
+.header-cabinet-login {
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+}
+
+
+.header-bottom-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 45px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+
+.header-list {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+}
+
+
+.header-button1 {
+  margin-right: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 13px 20px;
+  color: #CC9933;
+  background-color: #ffffff;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.header-button2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 13px 20px;
+  color: #CC9933;
+  background-color: #ffffff;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.header-list-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+
+/*Спецпредложения*/
+
+.offer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.offer-left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  min-width: 573px;
+  margin-right: 24px;
+}
+
+
+.offer-card:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+
+.offer-card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  padding: 40px 45px;
+}
+
+
+.offer-card1 {
+  background-image: url('../img/Мальдивские\ острова.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+
+
+.offer-card2 {
+  background-image: url('../img/Крит.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+
+
+.offer-h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  max-width: 420px;
+}
+
+.offer-price {
+  margin: 0;
+  margin-bottom: 47px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+
+.more {
+  display: inline-block;
+  margin: 0;
+  padding-right: 20px;
+  background-image: url('../img/Arroy.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #F0BF5F;
+}
+
+
+.offer-right {
+  justify-content: flex-end;
+  background-image: url('../img/Люкс.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+
+
+/*О Нас*/
+.about-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.about-content {
+  margin: 0;
+  max-width: 888px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+
+/*Услуги*/
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-items {
+  width: 572px;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+}
+
+
+.services-card-img {
+  height: 165px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+.text-more {
+  display: inline-block;
+  margin: 0;
+  padding-right: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;
+  background-image: url('../img/Arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+
+.services-card-content {
+  padding: 26px 126px 35px 45px;
+  background-color: #ffffff;
+}
+
+.services-card-btn {
+  margin: 0;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.services-text {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+/* Преимущества*/
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.advantages-item {
+  max-width: 200px;
+  margin-bottom: 22px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 40px 42px;
+}
+
+
+.advantages-card-img {
+  margin-bottom: 10px;
+  width: 67px;
+  height: 66px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.advantages-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+
+/* Размещение */
+
+.placing-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.accomodation-items {
+  width: 374px;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+
+.accomodation-card-image {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+
+
+.accomodation-card-price-rating {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 45px 45px 45px;
+}
+
+
+.accomodation-card-price {
+  padding: 0;
+  margin-right: 40px;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+
+.placing-location-onspain {
+  margin: 0;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+
+.placing-location-russian {
+  min-width: 400px;
+  margin: 0;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+
+.accomodation-items-last {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url('../img/9.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #666666;
+}
+
+
+.accomodation-card-last {
+  display: inline-block;
+  padding-right: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #ffffff;
+  margin-bottom: 27px;
+  background-image: url('../img/Rectangle\ 2.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+
+.placing-btn {
+  margin-right: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 13px 20px;
+  color: #CC9933;
+  background-color: #ffffff;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.tour-selection-container {
+  background-color: #e9e9e9;
+  padding: 45px 45px;
+  margin-bottom: 70px;
+}
+
+
+.tour-selection-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+}
+
+
+.form-common {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 28px 32px;
+}
+
+
+.form-left {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 51px;
+}
+
+
+.form-box {
+  margin-right: 41px;
+  color: #ffffff;
+}
+
+
+.form-input {
+  display: block;
+  box-sizing: border-box;
+  padding-top: 8px;
+  width: 121px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  background: transparent;
+  border: none;
+}
+
+
+label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+}
+
+
+.form-select {
+  display: block;
+  box-sizing: border-box;
+  padding-top: 8px;
+  width: 170px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  background: transparent;
+  border: none;
+}
+
+
+.tour-selection-btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 13px 20px;
+  color: #CC9933;
+  background-color: #ffffff;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.contacts-container {
+  margin-bottom: 40px;
+}
+
+
+.contacts-common {
+  display: flex;
+  padding: 45px 45px;
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+
+.contacts-left {
+  display: flex;
+  margin-right: 52px;
+  flex-direction: column;
+}
+
+
+.placing-btn {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 27px 30px;
+  color: #CC9933;
+  background-color: #ffffff;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  cursor: pointer;
+  max-width: 220px;
+}
+
+
+.contacts-list {
+  width: 375px;
+  margin-bottom: 45px;
+}
+
+
+.contacts-item {
+  display: flex;
+  border-bottom: 1px solid #E9E9E9;
+  margin-bottom: 25px;
+}
+
+
+.contacts-item-caption {
+  display: inline-block;
+  width: 145px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.contacts-item-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+
+.contacts-item-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+
+.contacts-item-number {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contacts-pic {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.footer-container {
+  display: flex;
+  background: #333333;
+  border-radius: 15px;
+  padding: 45px 45px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  justify-content:space-around;
+}
+
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 303px;
+  margin-right: 125px;
+}
+
+
+.footer-left-copyright {
+  margin-bottom: 37px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  color: #FFFFFF;
+}
+
+
+.footer-left-oferta {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  color: #FFFFFF;
+}
+
+
+.footer-left-license {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  cursor: pointer;
+  color: #CC9933; 
+}
+
+
+.footer-right {
+  display: flex;
+}
+
+
+.footer-mid {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  margin-right: 50px;
+  background-image: url('../img/Footer-sun.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+
+.footer-mid-adress {
+  display: block;
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+
+.footer-item-link {
+  display: block;
+  width: 160px;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+
+.footer-links {
+align-items: flex-end;
+}
+
+
+.footer-links-pic {
+  margin-bottom: 20px;
+}
