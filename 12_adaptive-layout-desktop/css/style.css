@@ -24,7 +24,7 @@ img {
 @font-face {
   font-family: 'Montserrat';
   src: local('Montserrat-Regular'),
-    url('../fonts/Montserrat-Regular.ttf') format('ttf');
+    url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.woff2') format('woff2');
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -34,7 +34,7 @@ img {
 @font-face {
   font-family: 'Montserrat';
   src: local('Montserrat-SemiBold'),
-    url('../fonts/Montserrat-SemiBold.ttf') format('ttf');
+    url('../fonts/Montserrat-SemiBold.woff') format('woff'), url('../fonts/Montserrat-SemiBold.woff2') format('woff2');
   font-display: swap;
   font-weight: 600;
   font-style: normal;
@@ -44,7 +44,7 @@ img {
 @font-face {
   font-family: 'Montserrat';
   src: local('Montserrat-ExtraBold'),
-    url('../fonts/Montserrat-ExtraBold.ttf') format('ttf');
+    url('../fonts/Montserrat-ExtraBold.woff') format('woff'), url('../fonts/Montserrat-ExtraBold.woff2') format('woff2');
   font-display: swap;
   font-weight: 800;
   font-style: normal;
@@ -54,7 +54,7 @@ img {
 @font-face {
   font-family: 'Montserrat';
   src: local('Montserrat-Black'),
-    url('../fonts/Montserrat-Black.ttf') format('ttf');
+    url('../fonts/Montserrat-Black.woff') format('woff'), url('../fonts/Montserrat-Black.woff2') format('woff2');
   font-display: swap;
   font-weight: 900;
   font-style: normal;
@@ -172,7 +172,7 @@ body {
 .nav__list {
   display: flex;
   align-items: center;
-  margin-right: 87px;
+  margin-right: 82px;
 }
 
 
@@ -200,7 +200,7 @@ body {
 
 
 .nav__item:not(:last-child) {
-  margin-right: 85px;
+  margin-right: 82px;
 }
 
 
@@ -216,7 +216,7 @@ body {
 
 .hero__title {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   max-width: 850px;
   font-weight: 800;
   font-size: 70px;
@@ -226,12 +226,11 @@ body {
 
 .hero__descr {
   margin: 0;
-  margin-bottom: 90px;
+  margin-bottom: 88px;
   max-width: 850px;
   font-weight: 700;
   font-size: 24px;
-  letter-spacing: 1px;
-  word-spacing: 1px;
+  word-spacing: -2px;
   line-height: 30px;
 }
 
@@ -239,23 +238,23 @@ body {
 .hero__button {
   padding: 24px 37px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 29px;
   text-align: center;
   color: var(--color-white);
   background-color: var(--color-accent);
-  word-spacing: 1px;
+  letter-spacing: -0.8px;
   transition: background-color 0.3s ease-in-out;
 }
 
 
 .hero__button:hover {
-background-color: rgba(255, 153, 0, 0.7);
+  background-color: rgba(255, 153, 0, 0.7);
 }
 
 
 .hero__button:active {
-background-color: var(--color-active);
+  background-color: var(--color-active);
 }
 
 
@@ -271,7 +270,6 @@ background-color: var(--color-active);
   font-size: 48px;
   line-height: 59px;
   color: var(--color-dark);
-  letter-spacing: 3px;
   word-spacing: 1px;
 }
 
@@ -288,8 +286,6 @@ background-color: var(--color-active);
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  letter-spacing: 1px;
-  word-spacing: 0.5px;
 }
 
 
@@ -328,8 +324,7 @@ background-color: var(--color-active);
   font-size: 16px;
   line-height: 32px;
   color: var(--color-white);
-  letter-spacing: 1px;
-  word-spacing: 1px;
+  letter-spacing: 0.1px;
 }
 
 
@@ -341,7 +336,6 @@ background-color: var(--color-active);
   line-height: 20px;
   text-align: center;
   color: var(--color-white);
-  letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -354,9 +348,6 @@ background-color: var(--color-active);
 .about-item__btn:active {
   background-color: var(--color-active);
 }
-
-
-
 
 
 .about-item__right {
@@ -393,7 +384,8 @@ background-color: var(--color-active);
   font-weight: 700;
   line-height: 34px;
   font-size: 24px;
-  letter-spacing: 1.3px;
+  letter-spacing: -0.5px;
+  word-spacing: 0.5px;
 }
 
 
@@ -404,7 +396,6 @@ background-color: var(--color-active);
   font-size: 16px;
   line-height: 32px;
   color: var(--color-dark);
-  letter-spacing: 1px;
 }
 
 
@@ -421,7 +412,7 @@ background-color: var(--color-active);
 
 
 .tabs-list__item:not(:last-child) {
-  margin-right: 88px;
+  margin-right: 86px;
 }
 
 
@@ -466,7 +457,7 @@ background-color: var(--color-active);
   font-size: 24px;
   line-height: 32px;
   color: var(--color-dark);
-  letter-spacing: 1.4px;
+  word-spacing: -3px;
 }
 
 
@@ -477,12 +468,11 @@ background-color: var(--color-active);
   font-size: 16px;
   line-height: 32px;
   color: var(--color-dark);
-  letter-spacing: 1.2px;
 }
 
 
 .tabs-item__btns {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -497,18 +487,17 @@ background-color: var(--color-active);
   text-align: center;
   color: var(--color-white);
   background-color: var(--color-accent);
-  letter-spacing: 1.2px;
   transition: background-color 0.3s ease-in-out;
 }
 
 
 .tabs-item__btn:hover {
-background-color: rgba(255, 153, 0, 0.6);
+  background-color: rgba(255, 153, 0, 0.6);
 }
 
 
 .tabs-item__btn:active {
-background-color: var(--color-active);
+  background-color: var(--color-active);
 }
 
 
@@ -520,32 +509,30 @@ background-color: var(--color-active);
   text-align: center;
   color: var(--color-dark);
   background-color: var(--color-white);
-  letter-spacing: 1.2px;
   transition: background-color 0.3s ease-in-out;
 }
 
 
 .tabs-item_contract:hover {
-background-color: #666666;
-color: var(--color-white);
+  background-color: #666666;
+  color: var(--color-white);
 }
 
 
 .tabs-item_contract:active {
-background-color: #000;
-color: var(--color-white);
+  background-color: #000;
+  color: var(--color-white);
 }
 
 
 .faq {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 98px;
 }
 
 
 .faq__title {
   margin-bottom: 43px;
-  letter-spacing: 2.7px;
 }
 
 
@@ -576,9 +563,9 @@ color: var(--color-white);
   margin: 0;
   font-weight: 700;
   font-size: 24px;
-  letter-spacing: 1.3px;
   line-height: 32px;
   color: var(--color-dark);
+  word-spacing: -2px;
   transition: color 0.3s ease-in-out;
 }
 
@@ -601,8 +588,8 @@ color: var(--color-white);
 
 
 .footer {
-  padding-top: 45px;
-  padding-bottom: 46px;
+  padding-top: 50px;
+  padding-bottom: 30px;
   color: var(--color-white);
   background-color: #222;
 }
@@ -616,14 +603,14 @@ color: var(--color-white);
 
 
 .footer__left {
-  margin-right: 104px;
+  margin-right: 98px;
   width: 320 px;
 }
 
 
 .footer__logo {
   display: inline-block;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 
 
@@ -638,7 +625,6 @@ color: var(--color-white);
   font-size: 18px;
   line-height: 36px;
   color: var(--color-dirty);
-  letter-spacing: 1px;
 }
 
 
@@ -705,7 +691,6 @@ color: var(--color-white);
 .footer__title {
   margin-bottom: 22px;
   color: var(--color-dirty);
-  word-spacing: -5.5px;
 }
 
 
@@ -729,19 +714,17 @@ color: var(--color-white);
   line-height: 32px;
   color: var(--color-white);
   background-color: #414141;
-  letter-spacing: 1.5px;
-  word-spacing: -4.5px;
 }
 
 
 .form__field:hover {
   background-color: #666666;
-  }
+}
 
 
-  .form__field:active {
+.form__field:active {
   background-color: #666666;
-  }
+}
 
 
 .form__field--area {
@@ -761,7 +744,7 @@ color: var(--color-white);
 
 .form__btn {
   margin-right: 22px;
-  padding: 19px 50px;
+  padding: 19px 51px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -769,7 +752,6 @@ color: var(--color-white);
   color: var(--color-white);
   background-color: var(--color-accent);
   transition: background-color 0.3s ease-in-out;
-  letter-spacing: 1.1px;
 }
 
 
@@ -804,7 +786,6 @@ color: var(--color-white);
   font-size: 16px;
   line-height: 32px;
   color: var(--color-dirty);
-  letter-spacing: 0.9px;
 }
 
 
@@ -845,5 +826,4 @@ color: var(--color-white);
   font-size: 16px;
   line-height: 32px;
   color: var(--color-dirty);
-  letter-spacing: 1.4px;
 }
