@@ -1,0 +1,512 @@
+html {
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto-Regular'),
+    url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Montserrat-SemiBold'),
+    url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2E2B44;
+  background-color: #fff;
+}
+
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.site-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+.header {
+  background-color: #3F2AFF;
+}
+
+
+.header__container {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 107px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header__logo {
+  margin-right: auto;
+}
+
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin-right: 94px;
+}
+
+
+.nav__item {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.nav__item:not(:last-child) {
+  margin-right: 56px;
+}
+
+
+.hero {
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+
+
+.hero__content {
+  padding-left: 108px;
+  padding-top: 130px;
+  background-image: url(../img/big.png);
+  background-position: 87% 55%;
+  background-repeat: no-repeat;
+  background-size: 42%;
+}
+
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+
+.hero__descr {
+  margin: 0;
+  margin-bottom: 60px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+
+.hero__button {
+  padding: 24px 76px;
+  font-weight: 700;
+  border-radius: 20px;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+  color: #fff;
+  background-color: #3F2AFF;
+  margin-bottom: 130px;
+}
+
+
+.advantages__container {
+  padding: 80px 95px 76px 118px;
+}
+
+
+.advantages__content {
+  background-image: url(../img/Advantages_pic.png);
+  background-position: left 26%;
+  background-repeat: no-repeat;
+  background-size: 15.5%;
+}
+
+
+.advatages__text {
+  margin-left: 180px;
+}
+
+
+.advantages__title {
+  margin: 0;
+  color: #2E2B44;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 16px;
+  word-spacing: 1px;
+}
+
+
+.advantages__descr {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+
+
+.advantages__point-1 {
+  background-image: url(../img/point-1.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 23%;
+}
+
+
+.advantages__point-2 {
+  background-image: url(../img/point-2.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 23%;
+}
+
+
+.advantages__point-3 {
+  background-image: url(../img/point-3.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 23%;
+}
+
+
+.advantages-list__descr {
+  margin: 0;
+  padding: 15px 0 16px 99px;
+  color: #666;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+
+.teachers {
+  background-color: #212133;
+}
+
+
+.teachers__container {
+  padding: 75px 116px 73px 107px;
+}
+
+
+.teachers__title {
+  margin: 0;
+  margin-bottom: 23px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+
+.teachers__column-1 {
+  background-image: url(../img/Rectangle\ 1.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 25px 25px 0px 0px;
+}
+
+
+.teachers__column-2 {
+  background-image: url(../img/Rectangle\ 7.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 25px 25px 0px 0px;
+}
+
+
+.teachers__column-3 {
+  background-image: url(../img/Rectangle\ 8.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 25px 25px 0px 0px;
+}
+
+
+.teachers__column-4 {
+  background-image: url(../img/Rectangle\ 9.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 25px 25px 0px 0px;
+}
+
+
+.teachers__subtitle {
+  margin: 0;
+  padding-top: 211px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 7px;
+}
+
+
+.teachers__descr {
+  margin: 0;
+  color: #85859B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+
+.courses__container {
+  padding: 75px 103px 50px 107px;
+}
+
+
+.courses__item {
+  display: flex;
+}
+
+
+.courses__content {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px 25px 25px 25px;
+  padding: 0 30px 0 30px;
+  background-color: #EDF0F9;
+  margin-bottom: 27px;
+}
+
+
+.courses__pic-1 {
+  background-image: url(../img/Courses-1.png)
+    /*, url(../img/time.png)*/
+  ;
+  background-position: top
+    /*, 75% 2%*/
+  ;
+  background-repeat: no-repeat
+    /*, no-repeat*/
+  ;
+  background-size: contain
+    /*, 5%*/
+  ;
+}
+
+
+.courses__pic-2 {
+  background-image: url(../img/Courses-2.png)
+    /*, url(../img/time.png)*/
+  ;
+  background-position: top
+    /*, 75% 2%*/
+  ;
+  background-repeat: no-repeat
+    /*, no-repeat*/
+  ;
+  background-size: contain
+    /*, 5%*/
+  ;
+}
+
+
+.courses__pic-3 {
+  background-image: url(../img/Courses-3.png)
+    /*, url(../img/time.png)*/
+  ;
+  background-position: top
+    /*, 75% 2%*/
+  ;
+  background-repeat: no-repeat
+    /*, no-repeat*/
+  ;
+  background-size: contain
+    /*, 5%*/
+  ;
+}
+
+
+.courses__pic-4 {
+  background-image: url(../img/Courses-4.png)
+    /*, url(../img/time.png)*/
+  ;
+  background-position: top
+    /*, 75% 2%*/
+  ;
+  background-repeat: no-repeat
+    /*, no-repeat*/
+  ;
+  background-size: contain
+    /*, 5%*/
+  ;
+}
+
+
+/*.courses__time-1 {
+    margin: 0;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: end;
+  }
+
+
+  .courses__time-2 {
+    margin: 0;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: end;
+  }
+
+
+  .courses__time-3 {
+    margin: 0;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: end;
+  }
+
+
+  .courses__time-4 {
+    margin: 0;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: end;
+  }
+*/
+
+.courses__title {
+  margin: 0;
+  color: #212133;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 23px;
+}
+
+.courses__subtitle {
+  margin: 0;
+  padding-top: 211px;
+  margin-bottom: 7px;
+  color: #212133;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+
+.courses__descr {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 46px;
+}
+
+
+.courses__btn {
+  margin: 0;
+  ;
+  padding: 22px 54px;
+  font-weight: 700;
+  border-radius: 20px;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+  color: #fff;
+  background-color: #3F2AFF;
+  margin-bottom: 30px;
+  justify-content: flex-end;
+}
+
+
+.social__link {
+  background-color: #2E2B44;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+
+.social__list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+
+.footer__logo {
+  text-align: center;
+}
+
+.footer__content {
+  margin: 0;
+  color: #212133;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+}
