@@ -74,13 +74,28 @@ body {
 }
 
 
-.header__container {
+/*.header__container {
   padding-top: 25px;
   padding-bottom: 30px;
   padding-left: 107px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}*/
+
+
+.header__menu {
+  padding-top: 29px;
+  padding-bottom: 25px;
+  padding-left: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header__logo-alt {
+  display: none;
 }
 
 
@@ -121,7 +136,7 @@ body {
 
 
 .hero__content {
-  padding-left: 108px;
+  padding-left: 105px;
   padding-top: 130px;
   background-image: url(../img/big.png);
   background-position: 87% 55%;
@@ -142,7 +157,7 @@ body {
 
 .hero__descr {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 62px;
   color: #fff;
   font-size: 18px;
   line-height: 27px;
@@ -163,7 +178,7 @@ body {
 
 
 .advantages__container {
-  padding: 80px 95px 76px 118px;
+  padding: 80px 95px 76px 115px;
 }
 
 
@@ -171,7 +186,7 @@ body {
   background-image: url(../img/Advantages_pic.png);
   background-position: left 26%;
   background-repeat: no-repeat;
-  background-size: 15.5%;
+  background-size: 14.3%;
 }
 
 
@@ -205,7 +220,7 @@ body {
   background-image: url(../img/point-1.png);
   background-position: center left;
   background-repeat: no-repeat;
-  background-size: 23%;
+  background-size: 22%;
 }
 
 
@@ -213,7 +228,7 @@ body {
   background-image: url(../img/point-2.png);
   background-position: center left;
   background-repeat: no-repeat;
-  background-size: 23%;
+  background-size: 22%;
 }
 
 
@@ -221,7 +236,7 @@ body {
   background-image: url(../img/point-3.png);
   background-position: center left;
   background-repeat: no-repeat;
-  background-size: 23%;
+  background-size: 22%;
 }
 
 
